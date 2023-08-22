@@ -43,7 +43,8 @@ export default function Home({ post }: { post: Post }) {
         >
           <p className="lead">
             Un outil open source développé par Natural Solutions,
-            <br /> pour la gestion des camera traps.
+            <br /> pour la gestion et le traitement 
+            <br /> des données de biodiversité issues de pièges photographiques.
           </p>
           <ul className="list-unstyled d-flex mb-0">
             <li>
@@ -56,10 +57,10 @@ export default function Home({ post }: { post: Post }) {
             </li>
             <li>
               <HomeLinkButton
-                href="/code"
+                href="https://demo.geocam.natural-solutions.eu/"
                 className="btn-primary text-white btn-lg"
               >
-                Tester GeoCam
+                Démo
               </HomeLinkButton>
             </li>
           </ul>
@@ -83,8 +84,9 @@ export default function Home({ post }: { post: Post }) {
           </ul>
         </Section>
         <Section title="À propos">
-          <p className="lead">XXX</p>
-          <p>XXX</p>
+          <p>GeoCam est une <b>application web open-source<b/> adaptée aux suivis en milieu naturel basés sur les capteurs autonomes, tels que les <b>pièges photographiques</b>.
+            Initiée et développée par Natural Solutions, elle permet de caractériser dans son ensemble les différentes facettes des <b>études de suivis</b> 
+            et de faciliter le traitement des données associées.</p>
         </Section>
         <div className="bg-light">
           <div className="container">
@@ -96,9 +98,7 @@ export default function Home({ post }: { post: Post }) {
               </div>
               <div className="col-md-6">
                 <Section title="Dernières versions" noContainer>
-                  <div className="row row-cols-lg-2 g-2">
-                    <Release title="GeoCam" repository="geocam" />
-                  </div>
+                 <p>En cours de développement</p> 
                 </Section>
               </div>
             </div>
@@ -107,25 +107,28 @@ export default function Home({ post }: { post: Post }) {
         <Section title="En bref">
           <div className="row row-cols-sm-2 row-cols-md-4">
             <Feature
-              title="XXX"
+              title="Gestion du stockage des médias"
               icon={require("public/icons/dataProcessing.png")}
             >
-              XXX
+              Technologie adaptée pour un stockage optimal des médias.
             </Feature>
             <Feature
-              title="XXX"
+              title="Gestion des pièges photographiques"
               icon={require("public/icons/natureOnScreen.png")}
             >
-              XXX
+              Inventaire des pièges photographiques, de leurs caractéristiques et de leur déploiement sur le terrain
             </Feature>
-            <Feature title="XXX" icon={require("public/icons/codeReview.png")}>
-              XXX
+            <Feature 
+              title="Gestion des sites de déploiement" 
+              icon={require("public/icons/codeReview.png")}>
+              Inventaire des sites de déploiements de pièges photographiques.
             </Feature>
             <Feature
-              title="XXX"
+              title="Annotation manuelle des médias"
               icon={require("public/icons/collaborators.png")}
             >
-              XXX
+              Saisie de données taxonomiques issue du traitement manuel 
+            </br>des médias en s'appuyant sur le référentiel <b>TaxRef</b>  
             </Feature>
           </div>
         </Section>
