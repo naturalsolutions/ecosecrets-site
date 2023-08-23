@@ -84,7 +84,7 @@ export default function Home({ post }: { post: Post }) {
           </ul>
         </Section>
         <Section title="À propos">
-          <p>GeoCam est une <b>application web open-source<b/> adaptée aux suivis en milieu naturel basés sur les capteurs autonomes, tels que les <b>pièges photographiques</b>.
+          <p>GeoCam est une <strong>application web open-source<strong/> adaptée aux suivis en milieu naturel basés sur les capteurs autonomes, tels que les <b>pièges photographiques</b>.
             Initiée et développée par Natural Solutions, elle permet de caractériser dans son ensemble les différentes facettes des <b>études de suivis</b> 
             et de faciliter le traitement des données associées.</p>
         </Section>
