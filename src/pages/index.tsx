@@ -149,7 +149,7 @@ export default function Home({ post }: { post: Post }) {
             >
               Saisie de données taxonomiques issue du traitement manuel
               <br />
-              des médias en s'appuyant sur le référentiel{" "}
+              des médias en s&apos;appuyant sur le référentiel{" "}
               <strong>TaxRef</strong>
             </Feature>
           </div>

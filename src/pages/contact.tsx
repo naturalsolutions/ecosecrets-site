@@ -24,8 +24,8 @@ export default function Contact() {
             :
             <br /> Mathilde Leclerc, ingénieure agronome et cheffe de projet
             numérique
-            <br /> Ophélie Da Silva, ingénieure spécialisée dans l'analyse et la
-            visualisation de la donnée.
+            <br /> Ophélie Da Silva, ingénieure spécialisée dans l&apos;analyse
+            et la visualisation de la donnée.
           </p>
         </Section>
       </main>
