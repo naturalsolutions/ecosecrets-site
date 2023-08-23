@@ -43,7 +43,7 @@ export default function Home({ post }: { post: Post }) {
         >
           <p className="lead">
             Un outil open source développé par Natural Solutions,
-            <br /> pour la gestion et le traitement 
+            <br /> pour la gestion et le traitement
             <br /> des données de biodiversité issues de pièges photographiques.
           </p>
           <ul className="list-unstyled d-flex mb-0">
@@ -75,7 +75,7 @@ export default function Home({ post }: { post: Post }) {
             </li>
             <li>
               <HomeLinkButton
-                href={`${process.env.NEXT_PUBLIC_GITHUB_URL}`+ `/GeoCam`}
+                href={`${process.env.NEXT_PUBLIC_GITHUB_URL}` + `/GeoCam`}
                 className="btn-light"
               >
                 Code source
@@ -84,24 +84,39 @@ export default function Home({ post }: { post: Post }) {
           </ul>
         </Section>
         <Section title="À propos">
-          <p>GeoCam est une <strong>application web open-source</strong> adaptée aux suivis en milieu naturel basés sur les capteurs autonomes, tels que les <strong>pièges photographiques</strong>.
-            Initiée et développée par Natural Solutions, elle permet de caractériser dans son ensemble les différentes facettes des <strong>études de suivis</strong> 
-            et de faciliter le traitement des données associées.</p>
+          <p>
+            GeoCam est une <strong>application web open-source</strong> adaptée
+            aux suivis en milieu naturel basés sur les capteurs autonomes, tels
+            que les <strong>pièges photographiques</strong>. Initiée et
+            développée par Natural Solutions, elle permet de caractériser dans
+            son ensemble les différentes facettes des{" "}
+            <strong>études de suivis</strong>
+            et de faciliter le traitement des données associées.
+          </p>
         </Section>
         <div className="bg-light">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
                 <Section title="Actualités" noContainer>
-                <ul>
-                  <li><a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">GeoCam, un outil open-source sur GitHub</a></li>
-                  <li><a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">Webinaire - Gérer vos pièges photos et les données associées</a></li>
-                </ul>
+                  <ul>
+                    <li>
+                      <a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">
+                        GeoCam, un outil open-source sur GitHub
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">
+                        Webinaire - Gérer vos pièges photos et les données
+                        associées
+                      </a>
+                    </li>
+                  </ul>
                 </Section>
               </div>
               <div className="col-md-6">
                 <Section title="Dernières versions" noContainer>
-                 <p>En cours de développement</p> 
+                  <p>En cours de développement</p>
                 </Section>
               </div>
             </div>
@@ -119,19 +134,23 @@ export default function Home({ post }: { post: Post }) {
               title="Gestion des pièges photographiques"
               icon={require("public/icons/Camera.png")}
             >
-              Inventaire des pièges photographiques, de leurs caractéristiques et de leur déploiement sur le terrain
+              Inventaire des pièges photographiques, de leurs caractéristiques
+              et de leur déploiement sur le terrain
             </Feature>
-            <Feature 
-              title="Gestion des sites de déploiement" 
-              icon={require("public/icons/Map_dark.png")}>
+            <Feature
+              title="Gestion des sites de déploiement"
+              icon={require("public/icons/Map_dark.png")}
+            >
               Inventaire des sites de déploiements de pièges photographiques.
             </Feature>
             <Feature
               title="Annotation manuelle des médias"
               icon={require("public/icons/Edit_photo.png")}
             >
-              Saisie de données taxonomiques issue du traitement manuel 
-            </br>des médias en s'appuyant sur le référentiel <strong>TaxRef</strong>  
+              Saisie de données taxonomiques issue du traitement manuel
+              <br />
+              des médias en s'appuyant sur le référentiel{" "}
+              <strong>TaxRef</strong>
             </Feature>
           </div>
         </Section>
