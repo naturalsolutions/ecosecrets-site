@@ -75,7 +75,7 @@ export default function Home({ post }: { post: Post }) {
             </li>
             <li>
               <HomeLinkButton
-                href={`${process.env.NEXT_PUBLIC_GITHUB_URL}`}
+                href={`${process.env.NEXT_PUBLIC_GITHUB_URL}`+ `/GeoCam`}
                 className="btn-light"
               >
                 Code source
@@ -93,7 +93,10 @@ export default function Home({ post }: { post: Post }) {
             <div className="row">
               <div className="col-md-6">
                 <Section title="Actualités" noContainer>
-                  <PostPreview post={post} />
+                <ul>
+                  <li><a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">GeoCam, un outil open-source sur GitHub</a></li>
+                  <li><a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">Webinaire - Gérer vos pièges photos et les données associées</a></li>
+                </ul>
                 </Section>
               </div>
               <div className="col-md-6">
@@ -108,24 +111,24 @@ export default function Home({ post }: { post: Post }) {
           <div className="row row-cols-sm-2 row-cols-md-4">
             <Feature
               title="Gestion du stockage des médias"
-              icon={require("public/icons/dataProcessing.png")}
+              icon={require("public/icons/Image_folder.png")}
             >
               Technologie adaptée pour un stockage optimal des médias.
             </Feature>
             <Feature
               title="Gestion des pièges photographiques"
-              icon={require("public/icons/natureOnScreen.png")}
+              icon={require("public/icons/Camera.png")}
             >
               Inventaire des pièges photographiques, de leurs caractéristiques et de leur déploiement sur le terrain
             </Feature>
             <Feature 
               title="Gestion des sites de déploiement" 
-              icon={require("public/icons/codeReview.png")}>
+              icon={require("public/icons/Map_dark.png")}>
               Inventaire des sites de déploiements de pièges photographiques.
             </Feature>
             <Feature
               title="Annotation manuelle des médias"
-              icon={require("public/icons/collaborators.png")}
+              icon={require("public/icons/Edit_photo.png")}
             >
               Saisie de données taxonomiques issue du traitement manuel 
             </br>des médias en s'appuyant sur le référentiel <b>TaxRef</b>  
