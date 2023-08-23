@@ -4,7 +4,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-import logo from "./static/geocam-logo-dark.png";
+import logo from "./static/geocam-logo-dark.svg";
 
 interface NavLiLinkProps extends LinkProps {
   href: string;

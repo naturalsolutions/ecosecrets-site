@@ -6,8 +6,7 @@ import { FC, PropsWithChildren } from "react";
 import Page from "@/layout/Page";
 import Section from "@/components/presentation/Section";
 import Feature from "@/components/presentation/Feature";
-import Release from "@/components/dynamic/github/Release";
-import PostPreview from "@/components/posts/PostPreview";
+
 import { getAllPosts } from "@/lib/api";
 import Post from "@/interfaces/Post";
 
@@ -126,26 +125,26 @@ export default function Home({ post }: { post: Post }) {
           <div className="row row-cols-sm-2 row-cols-md-4">
             <Feature
               title="Gestion du stockage des médias"
-              icon={require("public/icons/Image_folder.png")}
+              icon={require("public/images/icons/image_folder.png")}
             >
               Technologie adaptée pour un stockage optimal des médias.
             </Feature>
             <Feature
               title="Gestion des pièges photographiques"
-              icon={require("public/icons/Camera.png")}
+              icon={require("public/images/icons/camera.png")}
             >
               Inventaire des pièges photographiques, de leurs caractéristiques
               et de leur déploiement sur le terrain
             </Feature>
             <Feature
               title="Gestion des sites de déploiement"
-              icon={require("public/icons/Map_dark.png")}
+              icon={require("public/images/icons/map_dark.png")}
             >
               Inventaire des sites de déploiements de pièges photographiques.
             </Feature>
             <Feature
               title="Annotation manuelle des médias"
-              icon={require("public/icons/Edit_photo.png")}
+              icon={require("public/images/icons/edit_photo.png")}
             >
               Saisie de données taxonomiques issue du traitement manuel
               <br />
