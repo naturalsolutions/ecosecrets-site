@@ -84,8 +84,8 @@ export default function Home({ post }: { post: Post }) {
           </ul>
         </Section>
         <Section title="À propos">
-          <p>GeoCam est une <strong>application web open-source<strong/> adaptée aux suivis en milieu naturel basés sur les capteurs autonomes, tels que les <b>pièges photographiques</b>.
-            Initiée et développée par Natural Solutions, elle permet de caractériser dans son ensemble les différentes facettes des <b>études de suivis</b> 
+          <p>GeoCam est une <strong>application web open-source</strong> adaptée aux suivis en milieu naturel basés sur les capteurs autonomes, tels que les <strong>pièges photographiques</strong>.
+            Initiée et développée par Natural Solutions, elle permet de caractériser dans son ensemble les différentes facettes des <strong>études de suivis</strong> 
             et de faciliter le traitement des données associées.</p>
         </Section>
         <div className="bg-light">
@@ -131,7 +131,7 @@ export default function Home({ post }: { post: Post }) {
               icon={require("public/icons/Edit_photo.png")}
             >
               Saisie de données taxonomiques issue du traitement manuel 
-            </br>des médias en s'appuyant sur le référentiel <b>TaxRef</b>  
+            </br>des médias en s'appuyant sur le référentiel <strong>TaxRef</strong>  
             </Feature>
           </div>
         </Section>
