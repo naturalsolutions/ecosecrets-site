@@ -89,38 +89,10 @@ export default function Home({ post }: { post: Post }) {
             que les <strong>pièges photographiques</strong>. Initiée et
             développée par Natural Solutions, elle permet de caractériser dans
             son ensemble les différentes facettes des{" "}
-            <strong>études de suivis</strong>
-            et de faciliter le traitement des données associées.
+            <strong>études de suivis</strong> et de faciliter le traitement des
+            données associées.
           </p>
         </Section>
-        <div className="bg-light">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <Section title="Actualités" noContainer>
-                  <ul>
-                    <li>
-                      <a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">
-                        GeoCam, un outil open-source sur GitHub
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">
-                        Webinaire - Gérer vos pièges photos et les données
-                        associées
-                      </a>
-                    </li>
-                  </ul>
-                </Section>
-              </div>
-              <div className="col-md-6">
-                <Section title="Dernières versions" noContainer>
-                  <p>En cours de développement</p>
-                </Section>
-              </div>
-            </div>
-          </div>
-        </div>
         <Section title="En bref">
           <div className="row row-cols-sm-2 row-cols-md-4">
             <Feature
@@ -153,6 +125,34 @@ export default function Home({ post }: { post: Post }) {
             </Feature>
           </div>
         </Section>
+        <div className="bg-light border-dark">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <Section title="Actualités" noContainer>
+                  <ul>
+                    <li>
+                      <a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">
+                        GeoCam, un outil open-source sur GitHub
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">
+                        Webinaire - Gérer vos pièges photos et les données
+                        associées
+                      </a>
+                    </li>
+                  </ul>
+                </Section>
+              </div>
+              <div className="col-md-6">
+                <Section title="Dernières versions" noContainer>
+                  <p>En cours de développement</p>
+                </Section>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </Page>
   );

@@ -41,7 +41,6 @@ const Header: FC = () => (
     <div className="container">
       <Link href="/" className="navbar-brand">
         <Image src={logo} height={30} className="me-1" alt="" />
-        GeoCam
       </Link>
 
       <button

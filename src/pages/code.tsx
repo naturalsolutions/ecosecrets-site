@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Page from "@/layout/Page";
 import Section from "@/components/presentation/Section";
+import ReactPlayer from "react-player";
 
 export default function Demo() {
   return (
@@ -15,8 +16,12 @@ export default function Demo() {
           hero
           heroImage={require("public/images/banners/anastasia-nelen-mFHGq0RthBs-unsplash.jpg")}
         ></Section>
-        <Section title="Installation">
-          <p>Pour installer GeoCam sur un serveur, consulter XXXX</p>
+        <Section title="Démonstration de la plateforme">
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=FUrnB_F1FV8"
+            light={true}
+          />
         </Section>
       </main>
     </Page>
