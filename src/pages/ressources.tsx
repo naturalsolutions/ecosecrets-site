@@ -12,17 +12,12 @@ export default function Demo() {
       </Head>
       <main>
         <Section
-          title="Démo et code"
+          title="Ressources"
           hero
           heroImage={require("public/images/banners/anastasia-nelen-mFHGq0RthBs-unsplash.jpg")}
         ></Section>
-        <Section title="Démonstration de la plateforme">
-          <ReactPlayer
-            className="react-player"
-            url="https://www.youtube.com/watch?v=FUrnB_F1FV8"
-            light={true}
-          />
-        </Section>
+        <Section title="Ressources sur le projet"></Section>
+        <Section title="Ressources sur les pièges photographiques"></Section>
       </main>
     </Page>
   );

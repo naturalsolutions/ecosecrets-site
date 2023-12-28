@@ -58,10 +58,11 @@ const Header: FC = () => (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto">
           <NavLiLink href="/" exact>
-            Home
+            Accueil
           </NavLiLink>
           <NavLiLink href="/produit">Découvrir GeoCam</NavLiLink>
-          <NavLiLink href="/code">Code et démo</NavLiLink>
+          <NavLiLink href="/techno">Technologies</NavLiLink>
+          <NavLiLink href="/ressources">Ressources</NavLiLink>
           <NavLiLink href="/contact">Contact</NavLiLink>
         </ul>
       </div>
