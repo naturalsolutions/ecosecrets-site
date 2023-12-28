@@ -11,9 +11,9 @@ const Contact = ({
     <div className="row g-0">
       <div className="col-md-2">
         <Image
-          src={img}
+          src={img ? img : require("public/images/contacts/unknown.jpg")}
           style={{ width: 150, height: 150 }}
-          alt={"toto"}
+          alt={"Pas de photo disponible"}
         ></Image>
       </div>
       <div className="col-md-8">
