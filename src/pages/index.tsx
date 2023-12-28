@@ -9,6 +9,7 @@ import Feature from "@/components/presentation/Feature";
 
 import { getAllPosts } from "@/lib/api";
 import Post from "@/interfaces/Post";
+import Release from "@/components/dynamic/github/Release";
 
 const HomeLinkButton: FC<
   PropsWithChildren<{ href: string; className?: string }>
@@ -26,7 +27,7 @@ export default function Home({ post }: { post: Post }) {
   return (
     <Page>
       <Head>
-        <title>GeoCam</title>
+        <title>Site web GeoCam</title>
         <meta
           name="description"
           content="GeoCam, un outil open source développé par Natural Solutions"
@@ -44,6 +45,9 @@ export default function Home({ post }: { post: Post }) {
             Un outil open source développé par Natural Solutions,
             <br /> pour la gestion et le traitement
             <br /> des données de biodiversité issues de pièges photographiques.
+            <br /> <br />
+            Code d'accès à la démo de l'outil (identifiant : admin, mot de passe
+            : password)
           </p>
           <ul className="list-unstyled d-flex mb-0">
             <li>
@@ -59,7 +63,7 @@ export default function Home({ post }: { post: Post }) {
                 href="https://demo.geocam.natural-solutions.eu/"
                 className="btn-primary text-white btn-lg"
               >
-                Démo
+                Testez : admin/password
               </HomeLinkButton>
             </li>
           </ul>
@@ -83,7 +87,7 @@ export default function Home({ post }: { post: Post }) {
           </ul>
         </Section>
         <Section title="À propos">
-          <p>
+          <h5>
             GeoCam est une <strong>application web open-source</strong> adaptée
             aux suivis en milieu naturel basés sur les capteurs autonomes, tels
             que les <strong>pièges photographiques</strong>. Initiée et
@@ -91,7 +95,7 @@ export default function Home({ post }: { post: Post }) {
             son ensemble les différentes facettes des{" "}
             <strong>études de suivis</strong> et de faciliter le traitement des
             données associées.
-          </p>
+          </h5>
         </Section>
         <Section title="En bref">
           <div className="row row-cols-sm-2 row-cols-md-4">
@@ -143,11 +147,20 @@ export default function Home({ post }: { post: Post }) {
                       </a>
                     </li>
                   </ul>
+                  <p>Restez informé :</p>
+                  <a
+                    className="btn btn-outline-dark"
+                    href="https://share.hsforms.com/1ZeWN0-GQRM2tH1wD0ej1ig56pqq"
+                    role="button"
+                    target="_blank"
+                  >
+                    Inscrivez-vous à notre newsletter
+                  </a>
                 </Section>
               </div>
               <div className="col-md-6">
-                <Section title="Dernières versions" noContainer>
-                  <p>En cours de développement</p>
+                <Section title="Dernière version" noContainer>
+                  <Release title="GeoCam" repository="GeoCam" />
                 </Section>
               </div>
             </div>
