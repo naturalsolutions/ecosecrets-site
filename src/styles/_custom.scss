@@ -43,3 +43,7 @@ $constrainer-width: map-get($container-max-widths, "xxl") + $constrainer-offset;
     }
   }
 }
+
+.col {
+  margin-bottom: 10px;
+}
