@@ -23,7 +23,7 @@ export default function Demo() {
             technologies open-source.
           </p>
           <Image
-            src={require("public/images/GeoCam/techno_scheme.png")}
+            src={require("public/images/ecoSecrets/techno_scheme.png")}
             // style={{ width: 150, height: 150 }}
             alt={"Cette image n'est pas disponible"}
           ></Image>

@@ -48,7 +48,7 @@ const ReleaseCard = ({
 
 const Release = ({ repository, ...others }: Props) => {
   const { data, error, isValidating } = useSWR<Releases>(
-    `${BASE_URL}/${repository}/releases`
+    `${BASE_URL}/${repository}/releases`,
   );
 
   if (!!data)
