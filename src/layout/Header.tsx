@@ -4,7 +4,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-import logo from "./static/geocam-logo-dark.svg";
+import logo from "./static/ecoSecrets_Full_light.svg";
 
 interface NavLiLinkProps extends LinkProps {
   href: string;
@@ -41,7 +41,6 @@ const Header: FC = () => (
     <div className="container">
       <Link href="/" className="navbar-brand">
         <Image src={logo} height={30} className="me-1" alt="" />
-        GeoCam
       </Link>
 
       <button
@@ -59,10 +58,11 @@ const Header: FC = () => (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto">
           <NavLiLink href="/" exact>
-            Home
+            Accueil
           </NavLiLink>
-          <NavLiLink href="/produit">Découvrir GeoCam</NavLiLink>
-          <NavLiLink href="/code">Code et démo</NavLiLink>
+          <NavLiLink href="/produit">Découvrir ecoSecrets</NavLiLink>
+          <NavLiLink href="/techno">Technologies</NavLiLink>
+          <NavLiLink href="/ressources">Ressources</NavLiLink>
           <NavLiLink href="/contact">Contact</NavLiLink>
         </ul>
       </div>

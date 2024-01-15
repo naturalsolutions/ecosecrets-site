@@ -9,6 +9,7 @@ import Feature from "@/components/presentation/Feature";
 
 import { getAllPosts } from "@/lib/api";
 import Post from "@/interfaces/Post";
+import Release from "@/components/dynamic/github/Release";
 
 const HomeLinkButton: FC<
   PropsWithChildren<{ href: string; className?: string }>
@@ -26,17 +27,17 @@ export default function Home({ post }: { post: Post }) {
   return (
     <Page>
       <Head>
-        <title>GeoCam</title>
+        <title>Site web ecoSecrets</title>
         <meta
           name="description"
-          content="GeoCam, un outil open source développé par Natural Solutions"
+          content="ecoSecrets, un outil open source développé par Natural Solutions"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <Section
-          title="GeoCam"
+          title="ecoSecrets"
           hero
           heroImage={require("public/images/banners/tim-arnold-awbPPVPzO0c-unsplash.jpg")}
         >
@@ -44,6 +45,9 @@ export default function Home({ post }: { post: Post }) {
             Un outil open source développé par Natural Solutions,
             <br /> pour la gestion et le traitement
             <br /> des données de biodiversité issues de pièges photographiques.
+            <br /> <br />
+            Code d&apos;accès à la démo de l&apos;outil (identifiant : admin,
+            mot de passe : password)
           </p>
           <ul className="list-unstyled d-flex mb-0">
             <li>
@@ -51,22 +55,22 @@ export default function Home({ post }: { post: Post }) {
                 href="/produit"
                 className="btn-primary text-white btn-lg"
               >
-                Découvrir GeoCam
+                Découvrir ecoSecrets
               </HomeLinkButton>
             </li>
             <li>
               <HomeLinkButton
-                href="https://demo.geocam.natural-solutions.eu/"
+                href="https://demo.ecoSecrets.natural-solutions.eu/"
                 className="btn-primary text-white btn-lg"
               >
-                Démo
+                Testez : admin/password
               </HomeLinkButton>
             </li>
           </ul>
           <ul className="list-unstyled d-flex mb-0">
             <li>
               <HomeLinkButton
-                href="https://naturalsolutions.github.io/geocam/"
+                href="https://natural-solutions.gitlab.io/geonature/annotation/"
                 className="btn-light"
               >
                 Documentation
@@ -83,76 +87,87 @@ export default function Home({ post }: { post: Post }) {
           </ul>
         </Section>
         <Section title="À propos">
-          <p>
-            GeoCam est une <strong>application web open-source</strong> adaptée
-            aux suivis en milieu naturel basés sur les capteurs autonomes, tels
-            que les <strong>pièges photographiques</strong>. Initiée et
-            développée par Natural Solutions, elle permet de caractériser dans
-            son ensemble les différentes facettes des{" "}
-            <strong>études de suivis</strong>
-            et de faciliter le traitement des données associées.
-          </p>
+          <h5>
+            ecoSecrets est une <strong>application web open-source</strong>{" "}
+            adaptée aux suivis en milieu naturel basés sur les capteurs
+            autonomes, tels que les <strong>pièges photographiques</strong>.
+            Initiée et développée par Natural Solutions, elle permet de
+            caractériser dans son ensemble les différentes facettes des{" "}
+            <strong>études de suivis</strong> et de faciliter le traitement des
+            données associées.
+          </h5>
         </Section>
-        <div className="bg-light">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <Section title="Actualités" noContainer>
-                  <ul>
-                    <li>
-                      <a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">
-                        GeoCam, un outil open-source sur GitHub
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">
-                        Webinaire - Gérer vos pièges photos et les données
-                        associées
-                      </a>
-                    </li>
-                  </ul>
-                </Section>
-              </div>
-              <div className="col-md-6">
-                <Section title="Dernières versions" noContainer>
-                  <p>En cours de développement</p>
-                </Section>
-              </div>
+        <div className="bg-light border-dark">
+          <Section title="En bref">
+            <div className="row row-cols-sm-2 row-cols-md-4">
+              <Feature
+                title="Gestion du stockage des médias"
+                icon={require("public/images/icons/image_folder.png")}
+              >
+                Technologie adaptée pour un stockage optimal des médias.
+              </Feature>
+              <Feature
+                title="Gestion des pièges photographiques"
+                icon={require("public/images/icons/camera.png")}
+              >
+                Inventaire des pièges photographiques, de leurs caractéristiques
+                et de leur déploiement sur le terrain
+              </Feature>
+              <Feature
+                title="Gestion des sites de déploiement"
+                icon={require("public/images/icons/map_dark.png")}
+              >
+                Inventaire des sites de déploiements de pièges photographiques.
+              </Feature>
+              <Feature
+                title="Annotation manuelle des médias"
+                icon={require("public/images/icons/edit_photo.png")}
+              >
+                Saisie de données taxonomiques issue du traitement manuel
+                <br />
+                des médias en s&apos;appuyant sur le référentiel{" "}
+                <strong>TaxRef</strong>
+              </Feature>
+            </div>
+          </Section>
+        </div>
+        {/* <div className="bg-light border-dark"> */}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <Section title="Actualités" noContainer>
+                <ul>
+                  <li>
+                    <a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">
+                      ecoSecrets, un outil open-source sur GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.natural-solutions.eu/blog/webinaire-pieges-phorographiques">
+                      Webinaire - Gérer vos pièges photos et les données
+                      associées
+                    </a>
+                  </li>
+                </ul>
+                <p>Restez informé :</p>
+                <a
+                  className="btn btn-outline-dark"
+                  href="https://share.hsforms.com/1ZeWN0-GQRM2tH1wD0ej1ig56pqq"
+                  role="button"
+                  target="_blank"
+                >
+                  Inscrivez-vous à notre newsletter
+                </a>
+              </Section>
+            </div>
+            <div className="col-md-6">
+              <Section title="Dernière version" noContainer>
+                <Release title="GeoCam" repository="GeoCam" />
+              </Section>
             </div>
           </div>
         </div>
-        <Section title="En bref">
-          <div className="row row-cols-sm-2 row-cols-md-4">
-            <Feature
-              title="Gestion du stockage des médias"
-              icon={require("public/images/icons/image_folder.png")}
-            >
-              Technologie adaptée pour un stockage optimal des médias.
-            </Feature>
-            <Feature
-              title="Gestion des pièges photographiques"
-              icon={require("public/images/icons/camera.png")}
-            >
-              Inventaire des pièges photographiques, de leurs caractéristiques
-              et de leur déploiement sur le terrain
-            </Feature>
-            <Feature
-              title="Gestion des sites de déploiement"
-              icon={require("public/images/icons/map_dark.png")}
-            >
-              Inventaire des sites de déploiements de pièges photographiques.
-            </Feature>
-            <Feature
-              title="Annotation manuelle des médias"
-              icon={require("public/images/icons/edit_photo.png")}
-            >
-              Saisie de données taxonomiques issue du traitement manuel
-              <br />
-              des médias en s&apos;appuyant sur le référentiel{" "}
-              <strong>TaxRef</strong>
-            </Feature>
-          </div>
-        </Section>
+        {/* </div> */}
       </main>
     </Page>
   );
