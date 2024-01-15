@@ -19,7 +19,7 @@ export default function ContactPage() {
         />
         <Section>
           <h4>
-            Vous voulez échanger sur l'outil, contactez{" "}
+            Vous voulez échanger sur l&apos;outil, contactez{" "}
             <a href="mailto:?to=mathilde_leclerc@natural-solutions.eu,ophelie_da-silva@natural-solutions.eu,vaja_pavlovic@natural-solutions.eu">
               nous
             </a>{" "}
@@ -45,8 +45,8 @@ export default function ContactPage() {
           <br />
           <h4>Communauté open-source</h4>
           <p>
-            Pour tout échange sur les fonctionnalités de l'outil ou question
-            technique, vous pouvez également vous reportez{" "}
+            Pour tout échange sur les fonctionnalités de l&apos;outil ou
+            question technique, vous pouvez également vous reportez{" "}
             <a href="https://github.com/NaturalSolutions/GeoCam">
               au dépôt GitHub
             </a>{" "}

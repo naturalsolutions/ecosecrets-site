@@ -38,21 +38,21 @@ export default function Produit() {
                 <Member
                   name="Ophélie Da Silva"
                   img={require("public/images/contacts/Ophélie.png")}
-                  description="Ingénieure agronome et cheffe de projet numérique"
+                  description=""
                 />
               </div>
               <div className="col">
                 <Member
                   name="Maxime Vergez"
                   img={require("public/images/contacts/Max.png")}
-                  description="Ingénieure agronome et cheffe de projet numérique"
+                  description="Ingénieur et développeur "
                 />
               </div>
               <div className="col" style={{ display: "flex" }}>
                 <Member
                   name="Julien Graziani"
                   img={require("public/images/contacts/Julien.png")}
-                  description="Ingénieure agronome et cheffe de projet numérique"
+                  description="Ingénieure et développeur web sénior"
                 />
               </div>
             </div>
