@@ -19,8 +19,8 @@ export default function Demo() {
 
         <Section title="L'architecture">
           <p className="lead">
-            L&apos;application web GeoCam utilise uniquement des technologies
-            open-source.
+            L&apos;application web ecoSecrets utilise uniquement des
+            technologies open-source.
           </p>
           <Image
             src={require("public/images/GeoCam/techno_scheme.png")}

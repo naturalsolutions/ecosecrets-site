@@ -13,7 +13,7 @@ export default function Produit() {
       </Head>
       <main>
         <Section
-          title="Qu'est-ce que GeoCam ?"
+          title="Qu'est-ce que ecoSecrets ?"
           hero
           heroImage={require("public/images/banners/rafale.png")}
         ></Section>

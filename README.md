@@ -1,6 +1,6 @@
 # geocam-site
 
-GeoCam promotional site. Built using [Next.js](https://nextjs.org/) with TypeScript, it is intended to be hosted as a fully static site on GitHub Pages.
+ecoSecrets promotional site. Built using [Next.js](https://nextjs.org/) with TypeScript, it is intended to be hosted as a fully static site on GitHub Pages.
 
 ## Principles
 

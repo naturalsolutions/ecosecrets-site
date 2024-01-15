@@ -27,17 +27,17 @@ export default function Home({ post }: { post: Post }) {
   return (
     <Page>
       <Head>
-        <title>Site web GeoCam</title>
+        <title>Site web ecoSecrets</title>
         <meta
           name="description"
-          content="GeoCam, un outil open source développé par Natural Solutions"
+          content="ecoSecrets, un outil open source développé par Natural Solutions"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <Section
-          title="GeoCam"
+          title="ecoSecrets"
           hero
           heroImage={require("public/images/banners/tim-arnold-awbPPVPzO0c-unsplash.jpg")}
         >
@@ -55,7 +55,7 @@ export default function Home({ post }: { post: Post }) {
                 href="/produit"
                 className="btn-primary text-white btn-lg"
               >
-                Découvrir GeoCam
+                Découvrir ecoSecrets
               </HomeLinkButton>
             </li>
             <li>
@@ -70,7 +70,7 @@ export default function Home({ post }: { post: Post }) {
           <ul className="list-unstyled d-flex mb-0">
             <li>
               <HomeLinkButton
-                href="https://naturalsolutions.github.io/geocam/"
+                href="https://natural-solutions.gitlab.io/geonature/annotation/"
                 className="btn-light"
               >
                 Documentation
@@ -88,11 +88,11 @@ export default function Home({ post }: { post: Post }) {
         </Section>
         <Section title="À propos">
           <h5>
-            GeoCam est une <strong>application web open-source</strong> adaptée
-            aux suivis en milieu naturel basés sur les capteurs autonomes, tels
-            que les <strong>pièges photographiques</strong>. Initiée et
-            développée par Natural Solutions, elle permet de caractériser dans
-            son ensemble les différentes facettes des{" "}
+            ecoSecrets est une <strong>application web open-source</strong>{" "}
+            adaptée aux suivis en milieu naturel basés sur les capteurs
+            autonomes, tels que les <strong>pièges photographiques</strong>.
+            Initiée et développée par Natural Solutions, elle permet de
+            caractériser dans son ensemble les différentes facettes des{" "}
             <strong>études de suivis</strong> et de faciliter le traitement des
             données associées.
           </h5>
@@ -139,7 +139,7 @@ export default function Home({ post }: { post: Post }) {
                 <ul>
                   <li>
                     <a href="https://www.natural-solutions.eu/blog/geocam-gestion-donnees-pieges-photographiques-open-source">
-                      GeoCam, un outil open-source sur GitHub
+                      ecoSecrets, un outil open-source sur GitHub
                     </a>
                   </li>
                   <li>

@@ -27,7 +27,7 @@ const Footer = () => (
             natural-solutions.world
           </a>
           <br />
-          <a href="https://geocam.natural-solutions.eu/contact/">
+          <a href="https://ecosecrets.natural-solutions.eu/contact/">
             Nous contacter
           </a>
         </p>
@@ -37,7 +37,10 @@ const Footer = () => (
           <li>Comment installer l&apos;application ?</li>
           <li>Documentation utilisateur</li>
           &rarr; Toutes les informations sont sur{" "}
-          <a href="https://github.com/naturalsolutions/geocam" target="_blank">
+          <a
+            href="https://github.com/naturalsolutions/ecosecrets"
+            target="_blank"
+          >
             GitHub
           </a>
         </ul>
