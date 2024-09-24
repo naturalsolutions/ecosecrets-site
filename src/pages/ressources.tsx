@@ -78,7 +78,7 @@ export default function Demo() {
                 &quot;Dépôt de données relatives à la biologie et à la
                 conservation, conçu comme une ressource pour les chercheurs en
                 apprentissage automatique et pour ceux qui souhaitent mettre
-                l'apprentissage automatique au service de la biologie et de la
+                l&apos;apprentissage automatique au service de la biologie et de la
                 conservation.&quot;
                 <br />
                 Accessible ici :{" "}
@@ -91,7 +91,7 @@ export default function Demo() {
               <div className="fw-bold">WildCAM</div>
               <p>
                 {" "}
-                &quot;L'objectif de WildCAM (Wildlife Cameras for Adaptive
+                &quot;L&apos;objectif de WildCAM (Wildlife Cameras for Adaptive
                 Management) est de soutenir la gestion efficace de la faune en
                 encourageant la coordination des enquêtes par pièges
                 photographiques et la synthèse des données au Canada. Ce site
