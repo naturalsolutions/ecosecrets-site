@@ -78,8 +78,8 @@ export default function Demo() {
                 &quot;Dépôt de données relatives à la biologie et à la
                 conservation, conçu comme une ressource pour les chercheurs en
                 apprentissage automatique et pour ceux qui souhaitent mettre
-                l&apos;apprentissage automatique au service de la biologie et de la
-                conservation.&quot;
+                l&apos;apprentissage automatique au service de la biologie et de
+                la conservation.&quot;
                 <br />
                 Accessible ici :{" "}
                 <a href="https://lila.science/" target="_blank">
